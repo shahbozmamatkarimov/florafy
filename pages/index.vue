@@ -105,7 +105,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -142,7 +142,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -174,7 +174,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -206,7 +206,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -269,7 +269,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -306,7 +306,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -338,7 +338,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -370,7 +370,7 @@
                     />
                   </svg>
                 </p>
-                <i class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
               </div>
             </div>
             <div class="text-center">
@@ -385,6 +385,7 @@
 </template>
 
 <script setup>
+const router = useRouter();
 const store = reactive({
   scrollNews: 0,
   scroll1: true,

@@ -63,7 +63,7 @@
                 </svg>
               </p>
               <i
-                @click="router.push('/flowers/red_tulips')"
+                @click="router.push('/gifts/red_tulips')"
                 class="bx bx-search cursor-pointer bg-white p-2 rounded"
               ></i>
             </div>
