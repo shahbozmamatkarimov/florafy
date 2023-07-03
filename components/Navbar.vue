@@ -1,14 +1,14 @@
 <template>
   <nav>
     <div
-      class="flex justify-between items-center container mx-auto py-3 xl:px-40"
+      class="flex justify-between items-center container mx-auto py-3 px-5 xl:px-40"
     >
       <div>
         <h1><i class="bx bxs-map"></i> Toshkent</h1>
       </div>
       <div class="flex gap-4 items-center">
         <i class="bx bx-search-alt-2 cursor-pointer text-2xl"></i>
-        <p @click="cart.toggle = true" class="cursor-pointer">
+        <p @click="cart.toggle = true" class="relative cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5 group-hover:opacity-50 opacity-70"
@@ -23,6 +23,10 @@
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
             />
           </svg>
+          <span
+            class="flex justify-center items-center text-xs font-medium absolute top-2 left-2 h-4 w-4 bg-black rounded-full text-white"
+            >{{ cartToggle.cart1 }}</span
+          >
         </p>
         <div
           class="absolute top-0 right-0 z-10 bg-white duration-1000"
@@ -89,7 +93,9 @@
               >
                 Add promocode
               </button>
-              <button class="w-[30%] py-1 rounded border-2 border-[#595CFF] hover:bg-[#595CFF] hover:text-white">
+              <button
+                class="w-[30%] py-1 rounded border-2 border-[#595CFF] hover:bg-[#595CFF] hover:text-white"
+              >
                 Apply
               </button>
             </div>
@@ -100,9 +106,13 @@
               </h1>
               <hr />
               <h1 class="flex w-full justify-between py-4">
-                <span>Order</span><span>46 $</span>
+                <span>Order</span><span>230 $</span>
               </h1>
               <button
+                @click="
+                  router.push('/billing');
+                  cart.toggle = false;
+                "
                 class="bg-[#595CFF] flex items-center gap-3 px-16 py-2 mx-auto my-5 rounded-lg text-white"
               >
                 Checkout <img src="../assets/arrow.svg" alt="" />
@@ -130,6 +140,9 @@
 </template>
 
 <script setup>
+import { useCart } from '../composable/cart';
+const cartToggle = useCart();
+const router = useRouter();
 const cart = reactive({
   toggle: false,
 });

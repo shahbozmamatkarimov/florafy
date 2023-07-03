@@ -84,6 +84,8 @@
 </template>
 
 <script setup>
+import { useCart } from '../../composable/cart';
+const cart = useCart();
 const animate = reactive({
   animate: [],
   clientX: 0,
@@ -107,7 +109,9 @@ function animateFunc(id) {
   animate.animate.push(id);
   setTimeout(()=>{
     img.className += " hidden"
-  }, 2000)
+    cart.Cart();
+    console.log(cart.cart1.value  )
+  }, 1990)
 }
 </script>
 
@@ -140,8 +144,13 @@ function animateFunc(id) {
   z-index: 99;
   background-color: black;
   color: white;
-  /*outline: 100px solid red;*/
+  border-radius: 5px;
   animation: animatename 2s linear;
   animation: animation-name animation-duration animation-direction;
+  .cart {
+    .hover {
+      display: none;
+    }
+  }
 }
 </style>

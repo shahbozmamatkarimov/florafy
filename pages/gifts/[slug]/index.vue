@@ -1,12 +1,12 @@
 <template>
-  <section class="px-40 container">
+  <section class="px-40 container pb-40">
     <!-------------------------------------------------------- slug --------------------------------------------->
     <h1 class="pb-10">Home / All Gifts / Red Tulips</h1>
     <div class="grid lg:grid-cols-2 pb-40">
       <div class="h-[500px] w-[500px] rounded-lg bg-[#E6E6EB]">
         <img
           class="h-full w-full rounded-lg object-cover"
-          src="../../../assets/slug.png"
+          src="../../../assets/Block4.png"
           alt="img"
         />
         <div class="grid grid-cols-3 gap-5 my-2.5">

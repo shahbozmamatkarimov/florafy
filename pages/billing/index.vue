@@ -72,8 +72,8 @@
                 <option value="Paris">Paris</option>
               </select>
             </div>
-            <p class="flex items-center px-4 rounded w-[70%] bg-[#F9F9FB]">
-              12 Marlbary, 23b
+            <p class="flex items-center rounded w-[70%] bg-[#F9F9FB]">
+              <input class="outline-none bg-transparent placeholder-black w-full px-4" type="text" placeholder="12 Marlbary, 23b">
             </p>
           </div>
         </div>

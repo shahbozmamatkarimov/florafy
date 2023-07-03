@@ -1,5 +1,5 @@
 <template>
-  <section class="px-40 container">
+  <section class="px-40 container pb-40">
     <!-------------------------------------------------------- slug --------------------------------------------->
     <h1 class="pb-10">Home / All flowers / Red Tulips</h1>
     <div class="grid lg:grid-cols-2 pb-40">
@@ -163,7 +163,7 @@
                   </svg>
                 </p>
                 <i
-                  @click="router.push('/flowers/red_tulips')"
+                  @click="router.push('/flowers/red')"
                   class="bx bx-search cursor-pointer bg-white p-2 rounded"
                 ></i>
               </div>
@@ -203,7 +203,7 @@
                   </svg>
                 </p>
                 <i
-                  @click="router.push('/flowers/red_tulips')"
+                  @click="router.push('/flowers/red')"
                   class="bx bx-search cursor-pointer bg-white p-2 rounded"
                 ></i>
               </div>
@@ -238,7 +238,7 @@
                   </svg>
                 </p>
                 <i
-                  @click="router.push('/flowers/red_tulips')"
+                  @click="router.push('/flowers/red')"
                   class="bx bx-search cursor-pointer bg-white p-2 rounded"
                 ></i>
               </div>
@@ -273,7 +273,7 @@
                   </svg>
                 </p>
                 <i
-                  @click="router.push('/flowers/red_tulips')"
+                  @click="router.push('/flowers/red')"
                   class="bx bx-search cursor-pointer bg-white p-2 rounded"
                 ></i>
               </div>

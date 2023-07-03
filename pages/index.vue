@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:px-40 px-5 pb-40 container mx-auto">
+  <section class="xl:px-40 px-5 pb-40 container mx-auto">
     <!------------------------------ section1 -------------------------------------->
     <div
       class="relative bg-[#E6E6EB] w-full rounded overflow-hidden h-56 my-10"
@@ -77,14 +77,14 @@
       </button>
       <div id="new" class="flex gap-10 overflow-hidden overflow-x-auto">
         <div
-          class="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 grid-cols-2 gap-10 min-w-fit overflow-hidden"
+          class="flex gap-10 min-w-fit overflow-hidden"
           v-for="i in 3"
           :key="i"
         >
-          <div class="font-medium w-72">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
-                class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block1.jpg"
                 alt="img"
               />
@@ -105,7 +105,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -118,10 +121,10 @@
               </p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
-                class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block2.png"
                 alt="img"
               />
@@ -142,7 +145,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -150,10 +156,10 @@
               <p class="text-sm">44 $</p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
-                class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block3.png"
                 alt="img"
               />
@@ -174,7 +180,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -182,10 +191,10 @@
               <p class="text-sm">53 $</p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
-                class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block4.png"
                 alt="img"
               />
@@ -206,7 +215,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -241,11 +253,11 @@
       </button>
       <div id="relevant" class="flex gap-10 overflow-hidden overflow-x-auto">
         <div
-          class="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 grid-cols-2 gap-10 min-w-fit overflow-hidden"
+          class="flex gap-10 min-w-fit overflow-hidden"
           v-for="i in 3"
           :key="i"
         >
-          <div class="font-medium w-72">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
                 class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
@@ -269,7 +281,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -282,7 +297,7 @@
               </p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
                 class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
@@ -306,7 +321,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -314,7 +332,7 @@
               <p class="text-sm">44 $</p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
                 class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
@@ -338,7 +356,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -346,7 +367,7 @@
               <p class="text-sm">53 $</p>
             </div>
           </div>
-          <div class="font-medium">
+          <div class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72">
             <div class="cart">
               <img
                 class="sm:h-72 bg-[#E6E6EB] h-60 w-full rounded object-cover"
@@ -370,7 +391,10 @@
                     />
                   </svg>
                 </p>
-                <i @click="router.push('/flowers/red_tulips')" class="bx bx-search cursor-pointer bg-white p-2 rounded"></i>
+                <i
+                  @click="router.push('/flowers/red_tulips')"
+                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
+                ></i>
               </div>
             </div>
             <div class="text-center">
@@ -444,15 +468,27 @@ function Relevant(e) {
     }
   }
 }
+
+function animateFunc(id) {
+  const img = document.querySelector(`#img${id}`);
+  for (let i in animate.animate) {
+    let img1 = document.querySelector(`#img${animate.animate[i]}`);
+    img1.classList.remove("img");
+  }
+  img.className += " img";
+  animate.animate.push(id);
+  setTimeout(() => {
+    img.className += " hidden";
+  }, 1990);
+}
 </script>
 
 <style lang="scss" scoped>
-.cart:hover{
-  .hover{
+.cart:hover {
+  .hover {
     display: flex;
   }
 }
-
 
 @keyframes animatename {
   0% {
@@ -476,8 +512,13 @@ function Relevant(e) {
   z-index: 99;
   background-color: black;
   color: white;
-  /*outline: 100px solid red;*/
+  border-radius: 5px;
   animation: animatename 2s linear;
   animation: animation-name animation-duration animation-direction;
+  .cart {
+    .hover {
+      display: none;
+    }
+  }
 }
 </style>
