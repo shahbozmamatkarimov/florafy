@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Shop",
+      title: "FloraFY",
       link: [
         {
           rel: "stylesheet",
@@ -10,26 +10,26 @@ export default defineNuxtConfig({
         },
         {
           rel: "icon",
-          href: "https://i.ibb.co/PQ4mRtC/myphoto-Round.png",
-        }
+          href: "https://i.ibb.co/PQ4mRtC/myphoto-Round.png", 
+        },
       ],
       meta: [
         {
           property: "og:title",
-          content: "Rachim Borz",
+          content: "FloraFY",
         },
         {
           property: "og:image",
-          content: "https://ibb.co/TcDfsK9"
+          content: "https://ibb.co/TcDfsK9",
         },
         {
           property: "og:description",
-          content: "Shop",
+          content: "FloraFY",
         },
         {
           name: "description",
-          content: "Shop"
-        }
+          content: "FloraFY",
+        },
       ],
     },
   },
