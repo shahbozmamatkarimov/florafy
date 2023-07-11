@@ -1,14 +1,55 @@
 <template>
   <nav>
     <div
-      class="flex justify-between items-center container mx-auto py-3 px-5 xl:px-40"
+      class="flex justify-between items-center sm:border-b-0 border-b-2 mb-5 container mx-auto py-3 px-5 xl:px-40"
     >
       <div>
-        <h1><i class="bx bxs-map"></i> Toshkent</h1>
+        <h1 class="sm:block hidden"><i class="bx bxs-map"></i> Toshkent</h1>
+        <div class="sm:hidden relative">
+          <i
+            @click="
+              cart.menu = !cart.menu;
+              cart.mount = true;
+            "
+            class="bx bx-menu cursor-pointer text-2xl"
+          ></i>
+          <ul
+            v-show="cart.mount"
+            @click="
+              cart.menu =false;
+            "
+            :class="cart.menu ? 'menu' : 'close translate-x-full'"
+            class="absolute font-medium overflow-hidden overflow-y-auto max-h-[94vh] pb-28 z-50 bg-white w-[100vw] min-h-[94vh] -ml-5 shadow-md shadow-gray-700 text-lg"
+          >
+            <li
+              class="flex justify-between items-center border-b-2 cursor-pointer py-2 px-5"
+              v-for="i in navbar"
+              :key="i.id"
+            >
+              <router-link class="text-black" :to="i.path">{{
+                i.name
+              }}</router-link>
+              <i class="bx bx-plus font-medium"></i>
+            </li>
+            <div class="fixed z-50 w-full bottom-0 bg-white">
+              <div class="bg-[#80808021]">
+                <h1 class="border-b-2 border-gray-300 py-3">
+                  <i class="bx bxs-map px-2"></i>Toshkent
+                </h1>
+                <p>
+                  <i class="bx bxs-phone px-2"></i
+                  ><a class="underline text-black" href="tel:+998999999999"
+                    >+998 99 999 99 99</a
+                  >
+                </p>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
       <div class="flex gap-4 items-center">
-        <i class="bx bx-search-alt-2 cursor-pointer text-2xl"></i>
-        <p @click="cart.toggle = true" class="relative cursor-pointer">
+        <i class="bx bx-search-alt-2 cursor-pointer text-2xl my-auto pt-1"></i>
+        <p @click="cart.cart = true" class="relative cursor-pointer my-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5 group-hover:opacity-50 opacity-70"
@@ -30,7 +71,7 @@
         </p>
         <div
           class="absolute top-0 right-0 z-10 bg-white duration-1000"
-          :class="cart.toggle ? 'translate-x-0' : 'translate-x-full'"
+          :class="cart.cart ? 'translate-x-0' : 'translate-x-full'"
         >
           <div
             class="sticky top-0 w-full float-right border min-h-screen max-h-screen overflow-hidden overflow-y-auto shadow-lg shadow-gray-500 p-5"
@@ -40,7 +81,7 @@
             >
               <span class="text-2xl">Your cart</span
               ><i
-                @click="cart.toggle = false"
+                @click="cart.cart = false"
                 class="bx bx-x text-[#AFB1BD] text-4xl cursor-pointer"
               ></i>
             </h1>
@@ -111,7 +152,7 @@
               <button
                 @click="
                   router.push('/billing');
-                  cart.toggle = false;
+                  cart.cart = false;
                 "
                 class="bg-[#595CFF] flex items-center gap-3 px-16 py-2 mx-auto my-5 rounded-lg text-white"
               >
@@ -122,34 +163,54 @@
         </div>
       </div>
     </div>
-    <ul class="flex justify-center items-center text-lg py-6">
-      <li class="cursor-pointer px-10">
-        <router-link to="/">Asosiy</router-link>
-      </li>
-      <li class="cursor-pointer px-10">
-        <router-link to="/flowers">Gullar</router-link>
-      </li>
-      <li class="cursor-pointer px-10">
-        <router-link to="/gifts">Sovg'alar</router-link>
-      </li>
-      <li class="cursor-pointer px-10">
-        <router-link to="/about">Haqimizda</router-link>
+    <ul class="sm:flex hidden justify-center items-center text-lg py-6">
+      <li class="cursor-pointer px-10" v-for="i in navbar" :key="i.id">
+        <router-link class="text-black" :to="i.path">{{ i.name }}</router-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script setup>
-import { useCart } from '../composable/cart';
+import { navbar } from "../constants/navbar";
+import { useCart } from "../composable/cart";
 const cartToggle = useCart();
 const router = useRouter();
 const cart = reactive({
-  toggle: false,
+  cart: false,
+  menu: false,
+  mount: false,
 });
 </script>
 
 <style lang="scss" scoped>
 .router-link-active {
   border-bottom: 5px solid white;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+  animation: menu 1s ease-in;
+}
+
+@keyframes close {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.close {
+  animation: close 300ms linear;
 }
 </style>

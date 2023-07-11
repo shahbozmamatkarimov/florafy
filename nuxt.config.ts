@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "icon",
-          href: "https://i.ibb.co/PQ4mRtC/myphoto-Round.png", 
+          href: "https://i.ibb.co/PQ4mRtC/myphoto-Round.png",
         },
       ],
       meta: [
@@ -40,4 +40,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  plugins: ["@/plugins/antd"],
 });

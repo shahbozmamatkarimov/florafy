@@ -17,6 +17,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.20",
     "axios": "^1.4.0",
     "sass": "^1.63.6"
   }

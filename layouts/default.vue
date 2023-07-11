@@ -3,7 +3,7 @@
     <header>
       <Navbar />
     </header>
-    <main id="main" class="overflow-y-auto max-h-screen overflow-hidden">
+    <main id="main" class="xl:px-40 px-5 overflow-y-auto max-h-screen overflow-hidden">
       <slot />
       <Footer />
     </main>

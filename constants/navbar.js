@@ -1,27 +1,22 @@
 export const navbar = [
     {
         id: 1,
-        name: 'Home',
+        name: 'Asosiy',
         path: '/',
     },
     {
         id: 2,
-        name: 'Experience',
-        path: '/experience',
+        name: 'Gullar',
+        path: '/flowers',
     },
     {
         id: 3,
-        name: 'Projects',
-        path: '/projects',
+        name: 'Sovg\'alar',
+        path: '/gifts',
     },
     {
         id: 5,
-        name: 'Blog',
-        path: '/blog',
-    },
-    {
-        id: 4,
-        name: 'Contact',
-        path: '/contact',
+        name: 'Haqimizda',
+        path: '/about',
     },
 ]

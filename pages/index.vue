@@ -1,96 +1,84 @@
 <template>
-  <section class="xl:px-40 px-5 pb-40 container mx-auto">
-    <!------------------------------ slider -------------------------------------->
-    <div class="carousel-wrapper overflow-hidden">
-      <div class="carousel-container rounded-lg">
-        <div class="carousel">
-          <div
-            class="lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full lg:h-[482px] sm:h-[300px] h-[220px]"
-          >
-            <div
-              class="flex items-center relative bg-[#E6E6EB] lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full h-full border overflow-hidden my-10"
+  <section class="md:pb-40 pb-20 container mx-auto">
+    <a-carousel
+      class="lg:h-[482px] md:h-[400px] sm:h-[350px] h-[220px] shadow border rounded-md"
+      autoplay
+    >
+      <div class="w-full lg:h-[482px] md:h-[400px] sm:h-[350px] h-[220px]">
+        <div
+          class="flex items-center relative bg-[#E6E6EB] border-2 w-full h-full overflow-hidden"
+        >
+          <img
+            class="absolute mx-auto h-full rounded w-full object-cover"
+            src="../assets/Block.png"
+            alt="img"
+          />
+          <div class="absolute md:px-20 px-10 md:py-10 leading-10 font-medium">
+            <h1 class="md:text-3xl text-lg font-bold">40% OFF</h1>
+            <p class="text-lg">
+              Best deals this week. Fresh flowers, plants and gifts
+            </p>
+            <button
+              class="text-sm bg-black text-white flex gap-3 p-4 md:mt-5 mt-2 rounded items-center"
             >
-              <img
-                class="absolute mx-auto h-full rounded w-full object-cover"
-                src="../assets/Block.png"
-                alt="img"
-              />
-              <div
-                class="absolute md:px-20 px-10 py-10 md:mb-0 mb-10 leading-10 font-medium"
-              >
-                <h1 class="text-3xl font-bold">40% OFF</h1>
-                <p class="text-lg">
-                  Best deals this week. Fresh flowers, plants and gifts
-                </p>
-                <button
-                  class="text-sm bg-black text-white flex gap-3 p-4 mt-5 rounded items-center"
-                >
-                  Shop now <img src="../assets/arrow.svg" alt="img" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full lg:h-[482px] sm:h-[300px] h-[220px]"
-          >
-            <div
-              class="flex items-center relative bg-[#E6E6EB] lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full h-full border overflow-hidden my-10"
-            >
-              <img
-                class="absolute mx-auto rounded h-full w-full object-cover"
-                src="../assets/grid1.png"
-                alt="img"
-              />
-              <div
-                class="absolute md:px-20 px-10 py-10 md:mb-0 mb-10 leading-10 font-medium"
-              >
-                <h1 class="text-3xl font-bold">Nice little gifts</h1>
-                <p class="text-lg">for loved ones</p>
-                <button
-                  class="text-sm flex gap-3 py-4 mt-5 rounded items-center"
-                >
-                  View now <img src="../assets/arrow2.svg" alt="img" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full lg:h-[482px] sm:h-[300px] h-[220px]"
-          >
-            <div
-              class="flex items-center relative bg-[#E6E6EB] lg:w-[1216px] md:w-[992px] sm:w-[768px] w-full h-full border overflow-hidden my-10"
-            >
-              <img
-                class="absolute mx-auto rounded h-full w-full object-cover"
-                src="../assets/grid2.png"
-                alt="img"
-              />
-              <div
-                class="absolute md:px-20 px-10 py-10 md:mb-0 mb-10 leading-10 font-medium"
-              >
-                <h1 class="text-3xl font-bold">Plants</h1>
-                <p class="text-lg">for home comfort</p>
-                <button
-                  class="text-sm flex gap-3 py-4 mt-5 rounded items-center"
-                >
-                  View now <img src="../assets/arrow2.svg" alt="img" />
-                </button>
-              </div>
-            </div>
+              Shop now <img src="../assets/arrow.svg" alt="img" />
+            </button>
           </div>
         </div>
       </div>
-    </div>
-    <!------------------------------ slider end -------------------------------------->
+      <div class="w-full lg:h-[482px] md:h-[400px] sm:h-[350px] h-[220px]">
+        <div
+          class="flex items-center relative bg-[#E6E6EB] border w-full h-full overflow-hidden"
+        >
+          <img
+            class="absolute mx-auto rounded h-full w-full object-cover"
+            src="../assets/grid1.png"
+            alt="img"
+          />
+          <div
+            class="absolute md:px-20 px-10 md:py-10 md:leading-10 font-medium"
+          >
+            <h1 class="md:text-3xl text-2xl font-bold">Nice little gifts</h1>
+            <p class="md:text-lg text-sm">for loved ones</p>
+            <button
+              class="text-sm flex gap-3 py-4 md:mt-5 mt-2 rounded items-center"
+            >
+              View now <img src="../assets/arrow2.svg" alt="img" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:h-[482px] md:h-[400px] sm:h-[350px] h-[220px]">
+        <div
+          class="flex items-center relative bg-[#E6E6EB] border w-full h-full overflow-hidden"
+        >
+          <img
+            class="absolute mx-auto rounded h-full w-full object-cover"
+            src="../assets/grid2.png"
+            alt="img"
+          />
+          <div
+            class="absolute md:px-20 px-10 md:py-10 md:leading-10 font-medium"
+          >
+            <h1 class="md:text-3xl text-2xl font-bold">Plants</h1>
+            <p class="md:text-lg text-sm">for home comfort</p>
+            <button
+              class="text-sm flex gap-3 py-4 md:mt-5 mt-2 rounded items-center"
+            >
+              View now <img src="../assets/arrow2.svg" alt="img" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </a-carousel>
 
     <!------------------------------ section3 -------------------------------------->
-    <div class="pt-20">
+    <div class="md:pt-20">
       <button
         class="text-2xl font-medium flex justify-between w-full py-10 mt-10 rounded items-center"
       >
         New
-        <div class="flex gap-5 pr-20">
+        <div class="hidden sm:flex gap-5 pr-20">
           <img
             class="cursor-pointer"
             @click="News('minus')"
@@ -106,11 +94,11 @@
         </div>
       </button>
       <div id="new" class="flex gap-10 overflow-hidden overflow-x-auto">
-        <div class="sm:flex hidden gap-10 min-w-fit overflow-hidden">
+        <div class="relative sm:flex hidden gap-10 min-w-fit overflow-hidden">
           <div
             v-for="i in 12"
             :key="i"
-            class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72"
+            class="hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:border-gray-200 duration-500 my-3 border-2 border-white rounded-md font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72"
           >
             <div class="cart">
               <img
@@ -118,31 +106,37 @@
                 src="../assets/Block1.jpg"
                 alt="img"
               />
-              <div class="hover hidden gap-10 justify-center -mt-14 mb-8 z-10">
-                <p class="cursor-pointer bg-white p-2 rounded">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 group-hover:opacity-50 opacity-70"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="black"
+              <div class="flex justify-center items-center">
+                <div
+                  class="hover absolute hidden sm:gap-14 gap-7 duration-1000 justify-center -mt-10 mb-8 z-10"
+                >
+                  <p
+                    class="flex justify-center items-center duration-1000 cursor-pointer bg-white h-9 w-9 rounded"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </p>
-                <i
-                  @click="router.push('/flowers/red_tulips')"
-                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
-                ></i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 group-hover:opacity-50 opacity-70"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="black"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </p>
+                  <i
+                    @click="router.push('/flowers/red_tulips')"
+                    class="flex justify-center items-center bx bx-search cursor-pointer bg-white h-9 w-9 rounded"
+                  ></i>
+                </div>
               </div>
             </div>
             <div class="text-center">
-              <h1 class="text-lg py-2 mt-3">Red Tulips</h1>
+              <h1 class="text-lg md:py-2 md:mt-3 mt-2">Red Tulips</h1>
               <p class="text-sm">
                 46 $ &nbsp;&nbsp;&nbsp;
                 <span class="font-semibold line-through text-gray-500"
@@ -152,39 +146,52 @@
             </div>
           </div>
         </div>
-        <div class="sm:hidden grid grid-cols-2 gap-10 w-full overflow-hidden">
-          <div v-for="i in store.show1" :key="i" class="font-medium">
+
+        <div
+          class="relative mainCart sm:hidden grid grid-cols-2 gap-5 py-3 px-2 w-full overflow-hidden"
+        >
+          <div
+            v-for="i in store.show1"
+            :key="i"
+            class="hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:border-gray-200 duration-500 border-2 border-white rounded-md font-medium"
+          >
             <div class="cart">
               <img
-                class="lg:h-72 h-40 bg-[#E6E6EB] w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block1.jpg"
                 alt="img"
               />
-              <div class="hover hidden gap-10 justify-center -mt-14 mb-8 z-10">
-                <p class="cursor-pointer bg-white p-2 rounded">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 group-hover:opacity-50 opacity-70"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="black"
+              <div class="flex justify-center items-center">
+                <div
+                  class="hover absolute hidden sm:gap-14 gap-7 duration-1000 justify-center -mt-10 mb-8 z-10"
+                >
+                  <p
+                    class="flex justify-center items-center duration-1000 cursor-pointer bg-white h-9 w-9 rounded"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </p>
-                <i
-                  @click="router.push('/flowers/red_tulips')"
-                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
-                ></i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 group-hover:opacity-50 opacity-70"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="black"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </p>
+                  <i
+                    @click="router.push('/flowers/red_tulips')"
+                    class="flex justify-center items-center bx bx-search cursor-pointer bg-white h-9 w-9 rounded"
+                  ></i>
+                </div>
               </div>
             </div>
             <div class="text-center">
-              <h1 class="text-lg py-2 mt-3">Red Tulips</h1>
+              <h1 class="text-lg md:py-2 md:mt-3 mt-2">Red Tulips</h1>
               <p class="text-sm">
                 46 $ &nbsp;&nbsp;&nbsp;
                 <span class="font-semibold line-through text-gray-500"
@@ -211,7 +218,7 @@
         class="text-2xl font-medium flex justify-between w-full gap-3 py-10 mt-10 rounded items-center"
       >
         Relevant
-        <div class="flex gap-5 pr-20">
+        <div class="hidden sm:flex gap-5 pr-20">
           <img
             class="cursor-pointer"
             @click="Relevant('minus')"
@@ -226,12 +233,15 @@
           />
         </div>
       </button>
-      <div id="relevant" class="flex gap-10 overflow-hidden overflow-x-auto">
+      <div
+        id="relevant"
+        class="relative flex gap-10 overflow-hidden overflow-x-auto"
+      >
         <div class="sm:flex hidden gap-10 min-w-fit overflow-hidden">
           <div
             v-for="i in 12"
             :key="i"
-            class="font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72"
+            class="hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:border-gray-200 duration-500 my-3 border-2 border-white rounded-md font-medium 2xl:w-[17.2rem] lg:w-[19rem] md:w-[13.5rem] w-72"
           >
             <div class="cart">
               <img
@@ -239,31 +249,37 @@
                 src="../assets/Block1.jpg"
                 alt="img"
               />
-              <div class="hover hidden gap-10 justify-center -mt-14 mb-8 z-10">
-                <p class="cursor-pointer bg-white p-2 rounded">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 group-hover:opacity-50 opacity-70"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="black"
+              <div class="flex justify-center items-center">
+                <div
+                  class="hover absolute hidden sm:gap-14 gap-7 duration-1000 justify-center -mt-10 mb-8 z-10"
+                >
+                  <p
+                    class="flex justify-center items-center duration-1000 cursor-pointer bg-white h-9 w-9 rounded"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </p>
-                <i
-                  @click="router.push('/flowers/red_tulips')"
-                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
-                ></i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 group-hover:opacity-50 opacity-70"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="black"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </p>
+                  <i
+                    @click="router.push('/flowers/red_tulips')"
+                    class="flex justify-center items-center bx bx-search cursor-pointer bg-white h-9 w-9 rounded"
+                  ></i>
+                </div>
               </div>
             </div>
             <div class="text-center">
-              <h1 class="text-lg py-2 mt-3">Red Tulips</h1>
+              <h1 class="text-lg md:py-2 md:mt-3 mt-2">Red Tulips</h1>
               <p class="text-sm">
                 46 $ &nbsp;&nbsp;&nbsp;
                 <span class="font-semibold line-through text-gray-500"
@@ -273,39 +289,51 @@
             </div>
           </div>
         </div>
-        <div class="sm:hidden grid grid-cols-2 gap-10 w-full overflow-hidden">
-          <div v-for="i in store.show2" :key="i" class="font-medium">
+        <div
+          class="mainCart sm:hidden grid grid-cols-2 gap-5 py-3 px-2 w-full overflow-hidden"
+        >
+          <div
+            v-for="i in store.show2"
+            :key="i"
+            class="hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:border-gray-200 duration-500 border-2 border-white font-medium"
+          >
             <div class="cart">
               <img
-                class="lg:h-72 h-40 bg-[#E6E6EB] w-full rounded object-cover"
+                class="lg:h-72 h-60 bg-[#E6E6EB] w-full rounded object-cover"
                 src="../assets/Block4.png"
                 alt="img"
               />
-              <div class="hover hidden gap-10 justify-center -mt-14 mb-8 z-10">
-                <p class="cursor-pointer bg-white p-2 rounded">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 group-hover:opacity-50 opacity-70"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="black"
+              <div class="flex justify-center items-center">
+                <div
+                  class="hover absolute hidden sm:gap-14 gap-7 duration-1000 justify-center -mt-10 mb-8 z-10"
+                >
+                  <p
+                    class="flex justify-center items-center duration-1000 cursor-pointer bg-white h-9 w-9 rounded"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </p>
-                <i
-                  @click="router.push('/gifts/red_tulips')"
-                  class="bx bx-search cursor-pointer bg-white p-2 rounded"
-                ></i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 group-hover:opacity-50 opacity-70"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="black"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </p>
+                  <i
+                    @click="router.push('/flowers/red_tulips')"
+                    class="flex justify-center items-center bx bx-search cursor-pointer bg-white h-9 w-9 rounded"
+                  ></i>
+                </div>
               </div>
             </div>
             <div class="text-center">
-              <h1 class="text-lg py-2 mt-3">Red Tulips</h1>
+              <h1 class="text-lg md:py-2 md:mt-3 mt-2">Red Tulips</h1>
               <p class="text-sm">
                 46 $ &nbsp;&nbsp;&nbsp;
                 <span class="font-semibold line-through text-gray-500"
@@ -339,7 +367,6 @@ const store = reactive({
   scrollEnd: 1,
   show1: 4,
   show2: 4,
-  slider: 1,
 });
 
 function addShow1() {
@@ -412,12 +439,49 @@ function animateFunc(id) {
     img.className += " hidden";
   }, 1990);
 }
+
+// watch(
+//   () => route.fullPath,
+//   async () => {
+//     let main = document.querySelector("#main");
+//     main.scrollTo(0, 0);
+//     routerUrl.value = route.fullPath;
+//   }
+// );
+
+// onBeforeUnmount(() => {
+//   alert("Hello");
+// });
+
+// onMounted(() => {
+//   window.addEventListener("beforeunload", () => {
+//     alert("Hello");
+//   });
+// });
 </script>
 
 <style lang="scss" scoped>
+/* slider */
+.ant-carousel :deep(.slick-slide) {
+  border-radius: 4px;
+  background: #e6e6eb;
+  overflow: hidden;
+  transition-duration: 15s;
+}
+
 .cart:hover {
   .hover {
     display: flex;
+    animation: hover 2s linear;
+  }
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
   }
 }
 
@@ -453,165 +517,29 @@ function animateFunc(id) {
   }
 }
 
-// carousel
-
-/* normal carousel NON HOVER styles */
-.carousel-wrapper {
-  width: 100%;
-  height: 482px;
-  display: flex;
-  align-items: center;
-}
-
-.carousel {
-  display: flex;
-  width: 1216px;
-  animation: sliding 12s infinite;
-}
-
-@keyframes sliding {
-  0% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translateX(-1216px);
-  }
-  30% {
-    transform: translateX(-1216px);
-  }
-  40% {
-    transform: translateX(-2432px);
-  }
-  50% {
-    transform: translateX(-2432px);
-  }
-  60% {
-    transform: translateX(-1216px);
-  }
-  70% {
-    transform: translateX(-1216px);
-  }
-  80% {
-    transform: translateX(0);
+@media (max-width: 500px) {
+  .cart img {
+    height: 12rem;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .carousel-wrapper {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-  }
-
-  .carousel {
-    display: flex;
-    width: 992px;
-    animation: sliding 12s infinite;
-  }
-
-  /*.carousel:hover {
-    animation-play-state: paused;
-  }*/
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-992px);
-    }
-    65% {
-      transform: translateX(-992px);
-    }
-    70% {
-      transform: translateX(-1984px);
-    }
-    98% {
-      transform: translateX(-1984px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+@media (max-width: 400px) {
+  .cart img {
+    height: 10rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .carousel-wrapper {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-  }
-
-  .carousel {
-    display: flex;
-    width: 768px;
-    animation: sliding 12s infinite;
-  }
-
-  /*.carousel:hover {
-    animation-play-state: paused;
-  }*/
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-768px);
-    }
-    65% {
-      transform: translateX(-768px);
-    }
-    70% {
-      transform: translateX(-1536px);
-    }
-    98% {
-      transform: translateX(-1536px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+@media (max-width: 350px) {
+  .cart img {
+    height: 8rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .carousel-wrapper {
-    width: 100%;
-    height: 220px;
-    display: flex;
-    align-items: center;
-  }
-
-  .carousel {
-    display: flex;
-    width: 500px;
-    animation: sliding 12s ease;
-  }
-
-  /*.carousel:hover {
-    animation-play-state: paused;
-  }*/
-
-  @keyframes sliding {
-    30% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-500px);
-    }
-    65% {
-      transform: translateX(-500px);
-    }
-    70% {
-      transform: translateX(-1000px);
-    }
-    98% {
-      transform: translateX(-1000px);
-    }
-    100% {
-      transform: translateX(0);
+@media (max-width: 300px) {
+  .mainCart {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    .cart img {
+      height: 17rem;
     }
   }
 }
